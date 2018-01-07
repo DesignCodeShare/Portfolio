@@ -1,18 +1,114 @@
-body {background-color: #F6F6F6;};
-
-.placeholder-icon {
-  border-radius: 50%;
-  color: #24B4A9;
+body {
+  background-color: #F6F6F6;
+  margin: 0px;
+  margin-top: 148px;
 }
 
+nav {
+  color: #434447;
+}
+.shadow {
+  -moz-box-shadow:    1px 1px 6px 2px #C5C5C5;
+  -webkit-box-shadow: 1px 1px 6px 2px #C5C5C5;
+  box-shadow:         1px 1px 6px 2px #C5C5C5;
+}
+
+ol, ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+a:hover, a:focus, a:active {
+    color: #24B4A9;
+}
+a {
+  text-decoration: none;
+  transition: color 0.1s, background-color 0.1s;
+}
+a {
+    position: relative;
+    display: block;
+    padding: 6px 0;
+    margin: 0 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #434447;
+}
+a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    height: 2px;
+    width: 100%;
+    background-color: #24B4A9;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+a:active::before {
+    background-color: #24B4A9;
+}
+a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+
+
+
+.fixed {
+  position: fixed;
+  overflow: hidden;
+  background-color: #e4e4e4;
+  top: 0;
+  height: 60px;
+  width: 100%;
+}
+
+main {
+  margin-left: 20px;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+main > h1 {
+  color: #23b4aa;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 18px;
+}
+p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #434447;
+}
+main > p {
+  line-height: 32px;
+}
+.handlee {
+  font-family: 'Handlee';
+}
+.handlee-span {
+  font-family: 'Handlee';
+  color: #24B4A9;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.montserrat {
+  font-family: 'Montserrat';
+}
 .caps {
   text-transform: uppercase;
 }
-
-.handlee {
-  font-family: 'Handlee', cursive;
-}
-
-.montserrat {
-  font-family: 'Montserrat', sans-serif;
+h2 {
+  color: #434447;
 }
