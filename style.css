@@ -1,23 +1,31 @@
 body {
   background-color: #F6F6F6;
   margin: 0px;
-  margin-top: 148px;
+  margin-top: 64px;
 }
 
+/* Nav */
 nav {
   color: #434447;
+}
+.fixed {
+  position: fixed;
+  overflow: hidden;
+  background-color: #e4e4e4;
+  top: 0;
+  height: 60px;
+  width: 100%;
 }
 .shadow {
   -moz-box-shadow:    1px 1px 6px 2px #C5C5C5;
   -webkit-box-shadow: 1px 1px 6px 2px #C5C5C5;
   box-shadow:         1px 1px 6px 2px #C5C5C5;
 }
-
 ol, ul {
     list-style: none;
 }
 li {
-    display: inline-block;
+  float: right;
 }
 a:hover, a:focus, a:active {
     color: #24B4A9;
@@ -25,10 +33,12 @@ a:hover, a:focus, a:active {
 a {
   text-decoration: none;
   transition: color 0.1s, background-color 0.1s;
+  float: left;
 }
 a {
     position: relative;
     display: block;
+    float: left;
     padding: 6px 0;
     margin: 0 20px;
     letter-spacing: 1px;
@@ -59,15 +69,37 @@ a:hover::before, a:focus::before {
 }
 
 
+/* Logo */
+.placeholder-logo {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* IE8 */
+    width: 50px;
+    height: 50px;
+    background: #434447;
+    border: 1px solid #434447;
+}
 
+.logo-name {
+  font-weight: 600;
+  line-height: 18px;
+  margin: 18px 12px;
+  color: #434447 !important;
+}
 
-.fixed {
-  position: fixed;
-  overflow: hidden;
-  background-color: #e4e4e4;
-  top: 0;
-  height: 60px;
-  width: 100%;
+/* Generic */
+.float-left {
+	float:left;
+	clear:left;
+}
+.float-right {
+	float:right;
+	clear:right;
+}
+
+.secret {
+  color: #F6F6F6;
+  margin: 18px;
+  font-weight: 600;
 }
 
 main {
