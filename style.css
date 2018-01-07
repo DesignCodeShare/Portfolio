@@ -1,31 +1,9 @@
-body {
-  background-color: #434447 !important;
-};
-
-#about {
-  background-color: #F6F6F6;
-};
+body {background-color: #F6F6F6;};
 
 .placeholder-icon {
   border-radius: 50%;
   color: #24B4A9;
 };
-
-.nav-bkgrnd {
-  background-color: #F6F6F6 !important;
-};
-
-.nav-link {
-  color: #434447 !important;
-};
-
-.nav-link:hover {
-  color: #24B4A9 !important;
-};
-
-a:hover { 
-    background-color: #24B4A9 !important;
-}
 
 .caps {
   text-transform: uppercase;
